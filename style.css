@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+#main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.homeland {
+    width: 100%;
+    height: 100vh;
+    background-image: url("vet-sec.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 50px;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar h1 {
+    font-size: 2.5vw;
+    font-weight: 600;
+    letter-spacing: -.4px;
+    color: rgb(21, 0, 61);
+    opacity: .9;
+}
+
+.nav-item {
+    display: flex;
+    gap: 44px;
+}
+
+.nav-item li {
+    list-style: none;
+}
+
+.nav-item li a {
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: 400;
+    color: rgb(21, 0, 61);
+}
+
+
+.nav-btn i {
+    padding-right: 10px;
+    color: #000;
+    font-size: 2vw;
+}
+
+.nav-btn button {
+    padding: 6px 25px;
+    border: none;
+    border-radius: 25px;
+    border-bottom: 1px solid rgb(21, 0, 61);
+    font-size: 1.2vw;
+    font-weight: bold;
+    background-color: transparent;
+    color: #fff;
+}
+
+#home-main {
+    padding: 7vw .3vw;
+    color: #fff;
+
+}
+
+#home-hd h1 {
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+#home-hd p {
+    width: 45%;
+    font-size: 1.5vw;
+    letter-spacing: -.7px;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+.btn {
+    padding: 2.5vw 9vw;
+}
+
+.btn button {
+    padding: 15px 35px;
+    font-size: 1.6vw;
+    font-weight: bold;
+    color: #fff;
+    background-color: #555151;
+    border: none;
+    border-radius: 10px;
+}
+
+#homelst {
+    text-align: left;
+    float: right;
+    position:relative;
+    bottom: 14px;
+}
+
+#homelst .nbr h1 {
+    font-size: 3vw;
+    font-weight: 400;
+    color:#000;
+}
+
+#homelst p {
+    font-size: 1.5vw;
+    font-weight: 400;
+    letter-spacing: .2px;
+    color: rgb(21, 0, 61);
+}
+
+.alpha {
+    width: 100%;
+    height: 40px;
+    padding: 0 4vw;
+    background-color: #555151;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.alpha p {
+    color: white;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.alpha p i {
+    color: #000;
+}
+
+#second-sec {
+    width: 100%;
+    height: auto !important;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.elems {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elem-cls {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.elem-cls h4 {
+    padding: 10px 0;
+    opacity: .7;
+}
+
+.elem-cls h2 {
+    padding: 5px 0;
+}
+
+.round {
+    width: 50px;
+    height: 50px;
+    background-color: #464444;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2vw;
+    color: white
+}
+
+.bg-col {
+    background-color: #57C84D;
+}
+
+.bg-color {
+    background-color: #171717;
+}
+
+#second-heading {
+    padding: 8vw 20vw;
+    color: #fff;
+}
+
+#second-heading h1 {
+    width: 100%;
+    opacity: .8;
+    font-size: 4vw;
+    letter-spacing: -.6px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+#second-heading p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: 3
+}
+
+#third-section {
+    width: 100%;
+    min-height: 100vh;
+    height: auto !important;
+    padding: 5vw 10vw;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.item {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wide {
+    grid-column: span 6;
+}
+
+.narrow {
+    grid-column: span 4;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+
+    .wide,
+    .narrow {
+        grid-column: span 12;
+
+    }
+}
+
+#footer-sec {
+    height: auto !important;
+    width: 100%;
+    padding: 7vw 10vw;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.foot-heading {
+    width: 100%;
+    text-align: center;
+    padding: 0 9vw;
+}
+
+.foot-heading h1 {
+    font-size: 2.5vw;
+    letter-spacing: .2px;
+    line-height: 1.2;
+}
+
+.text-image {
+    padding: 10vw 5vw;
+    text-align: center;
+}
+
+.container {
+    padding: 4vw 7vw;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.earth-image {
+    width: 250px;
+    height: 250px;
+    float: left;
+    shape-outside: circle(50%);
+    border-radius: 50%;
+    margin: 20px 40px 20px 0;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Earth_Western_Hemisphere_transparent_background.png/600px-Earth_Western_Hemisphere_transparent_background.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 30px rgba(52, 152, 219, 0.5);
+    animation: rotateEarth 20s linear infinite;
+}
+
+
+.earth {
+    width: 500px;
+    height: 500px;
+    background-image: url('vecteezy_earth-graphy.png');
+    background-size: cover;
+    background-position: center;
+    animation: rotateEarth 20s linear infinite;
+}
+
+@keyframes rotateEarth {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+    background-color: #171717;
+    padding: 4px 3px;
+    text-align: center;
+}
+
+.earth-container {
+    height: auto !important;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #000;
+    padding: 7vw 5vw;
+    font-size: 1.5vw;
+}
+
+.text-1 {
+    position: absolute;
+    top: 150px;
+}
+
+.text-2 {
+    position: absolute;
+    top: 400px;
+    left: -20px;
+}
+
+.text-3 {
+    position: absolute;
+    top: 150px;
+    right: 430px;
+}
+
+.text-4 {
+    position: absolute;
+    top: 400px;
+    right: 390px;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+    width: 100%; 
+    overflow: hidden;
+    display: flex; 
+    justify-content: flex-start;
+}
+
+#home-main .bounding .boundinelem{
+    transform: translateY(100%);
+}
